@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/stylemenu.css">
+    <title>Menu | Affamato Restaurant</title>
+</head>
+<body>
+    <header>
+        <div class="site-header">
+            <div id="site-header-primary">
+                <div class="container">
+                    <div class="site-logo">
+                        <a href="index.html">
+                            <img class="site-logo-btn" draggable="false" src="source/logo.png" alt="Affamato Restaurant Home">
+                        </a>
+                    </div>
+                    <nav class="site-nav">
+                        <ul class="site-nav-menu">
+                            <li><a href="welcomepage.html">WELCOME</a></li>
+                            <li><a href="menu.html">MENU</a></li>
+                            <li><a href="privateDine.html">PRIVATE DINING</a></li>
+                            <li><a href="ourteam.html">OUR TEAM</a></li>
+                            <li><a href="reservations.html">RESERVATIONS</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        
+        <div class="site-body">
+            <div class="container-body">
+                <ul class="body-nav-menu">
+                    <li><a href ="#" onclick="changeMenu('menu')" id="menu-list">OUR MENUS</a></li>
+                    <li><a href ="#"onclick="changeMenu('wine')" id="wine-list"> WINE LISTS</a></li>
+                </ul>
+                <div id="text-menu">
+                    <p> We serve a nightly tasting menu that draws inspiration from the local ingredients of Northern California, and West Marin County specifically. </p>
+
+                    <p>A meal in the dining room consists of 8-10 courses.</p>
+
+                    <p>Tasting Menu: 298</p>
+
+                    <p>Optional Wine Pairing: 275</p>
+                    <br>
+                    <br>
+                    <p>In our salon, we offer an abbreviated seasonal menu of 5 courses served at tables in the bar area. </p>
+        
+                    <p>Salon Menu: 195</p>
+                    <br>
+                    <br>
+                    <p>Due to the close proximity of the restaurant’s own Farm in Bolinas, less than an hour away, we have the opportunity and responsibility to showcase the highest quality ingredients, of not only the season but of that very day, creating a dining experience that is defined by a true sense of place and season.</p>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                <div id="text-wine">
+                    <p> Affamato is proud to present a curated collection of fine wines from around the world. The list highlights selections of older vintages from classic, Old World growing regions as well as wines from smaller local producers with limited production that best exemplify Californian viticulture. And because the menu changes daily, our sommeliers have the opportunity to explore the full range of the award-winning list, choosing wines that are uniquely paired to the cuisine.</p>
+
+                    <p>In addition to our vast collection of wines, we offer a selection of fine whiskey, single malt scotch, vintage amaro, and other spirits and liqueurs.</p>
+
+                    <p>If you would like to bring in a bottle, our corkage fee is 85 dollars per 750ml bottle. We do ask that you limit  to two bottles that are not currently represented on our wine list. </p>
+
+                    <img draggable="false" class="wine-price" src="source/wine.png" alt="wine-price">
+
+                    <br>
+                    <br>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+		<div class="fixFooter">
+			<div class="footer-container">
+				<div class="footerlogo">
+					<img draggable='false' class="social-media-logo" src="source/footerlogo2.png">
+				</div>
+				<div class="footer-menu-wrap">
+                    <ul class="footer-menu">
+                        <li>470 PACIFIC AVENUE, SAN FRANCISCO</li>
+                        <li>415.775.8500</li>
+                        <li>DINE IN</li>
+                        <li>BUFFET</li>
+                    </ul>
+                </div>
+			</div>
+		</div>
+	</footer>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            document.getElementById("site-header-primary").style.backgroundImage = "";
+            document.getElementById("site-header-primary").style.backgroundColor = "rgba(246, 241, 238, 0.9)";
+            document.getElementsByClassName("site-logo")[0].style.width = "200px";
+            document.getElementById("site-header-primary").style.paddingTop = "1rem";
+            document.getElementById("site-header-primary").style.paddingBottom = "0.8rem";
+          } else {
+            document.getElementById("site-header-primary").style.backgroundImage = "linear-gradient(rgb(246, 241, 238), rgba(255, 255, 255, 0))";
+            document.getElementById("site-header-primary").style.backgroundColor = "";
+            document.getElementsByClassName("site-logo")[0].style.width = "300px";
+            document.getElementById("site-header-primary").style.paddingTop = "1.5rem";
+            document.getElementById("site-header-primary").style.paddingBottom = "1.5rem";
+          }
+        }
+
+        function changeMenu(opt){
+            var menu = document.getElementById("text-menu");
+            var wine = document.getElementById("text-wine");
+            var menutab = document.getElementById("menu-list");
+            var winetab = document.getElementById("wine-list");
+
+
+            if(opt=="menu"){
+                menu.style.display = "block";
+                wine.style.display = "none";
+                menutab.style.color = "#9a574b";
+                winetab.style.color = "black";
+            }
+            else if(opt=="wine"){
+                menu.style.display = "none";
+                wine.style.display = "block";
+                winetab.style.color = "#9a574b";
+                menutab.style.color = "black";          
+            }
+        }
+        </script>
+</body>
+</html>

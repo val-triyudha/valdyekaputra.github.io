@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Reservations | Affamato Restaurant</title>
+	<link rel="stylesheet" type="text/css" href="css/reservationCss.css">
+</head>
+<body>
+    <header>
+        <div class="site-header">
+            <div id="site-header-primary">
+                <div class="container">
+                    <div class="site-logo">
+                        <a href="index.html">
+                            <img class="site-logo-btn" draggable="false" src="source/logo.png" alt="Affamato Restaurant Home">
+                        </a>
+                    </div>
+                    <nav class="site-nav">
+                        <ul class="site-nav-menu">
+                            <li><a href="welcomepage.html">WELCOME</a></li>
+                            <li><a href="menu.html">MENU</a></li>
+                            <li><a href="privateDine.html">PRIVATE DINING</a></li>
+                            <li><a href="ourteam.html">OUR TEAM</a></li>
+                            <li><a href="reservations.html">RESERVATIONS</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+		<div class="wrapper">
+	        <div class="open-image">        
+	            <div class="welcome-image"></div>
+	        </div>
+			<div class="content-box">
+					<div class="guest-policies">
+						<h1>HOURS & GUEST POLICIES</h1>
+						<p>Affamato serves dinner Tuesday through Saturday and is closed Sunday and Monday. We are open for private dining 7 days a week. Our hours are Tuesday through Thursday from 5:30 p.m. to 9:00 p.m., Friday and Saturday from 5:00 p.m. to 9:00 p.m.</p>
+	                    
+	                    <p>To make a reservation please call 415.775.8500, Monday through Saturday from 10:00 a.m. to 6:00 p.m. or reserve online through OpenTable using the links below. Our Guest Services team can also be reached via email at info@Affamatorestaurant.com.</p>
+					</div>
+				<div class="reservation-image" style='background-image:url("source/reservation02.jpg")'>
+                </div>
+                
+				<div class="room-type">
+                    <h1>DINING ROOM RESERVATIONS</h1>
+                    <p>Main Dining Room reservations can be made up to three months in advance.
+                    <br><br>
+                    Affamato features a nightly tasting menu in the Main Dining Room that highlights the seasonal bounty of Northern California. The cost of the tasting menu is 298 dollars per person.
+                    <br><br>
+                    When making your reservation, please indicate any dietary restrictions. Due to the complexity of the menu, it may not be possible to accommodate all restrictions and food allergies.
+                    <br><br>
+                    All reservations are confirmed by phone at least three days prior. Any cancellations must be made at least 48 hours prior to the time of the reservation to avoid a 298 dollar (plus tax) per person late cancellation charge; this policy applies to same day reservations as well. If we are unable to confirm with you, your reservation will be cancelled one day prior to the reservation at 5:00 pm. We thank you for your understanding.</p>
+                    <div class="reserve-button">
+                        <a onclick="toggle()">DINING ROOM RESERVATION</a>
+                    </div>
+                </div>
+
+                <div class="reservation-image" style='background-image:url("source/reservation03.jpg")'>
+                </div>
+                
+                <div class="room-type last">
+                    <h1>TERRACE RESERVATIONS</h1>
+                    <p>Main Dining Room reservations can be made up to three months in advance.
+                    <br><br>
+                    Affamato features a nightly tasting menu in the Main Dining Room that highlights the seasonal bounty of Northern California. The cost of the tasting menu is 298 dollars per person.
+                    <br><br>
+                    When making your reservation, please indicate any dietary restrictions. Due to the complexity of the menu, it may not be possible to accommodate all restrictions and food allergies.
+                    <br><br>
+                    All reservations are confirmed by phone at least three days prior. Any cancellations must be made at least 48 hours prior to the time of the reservation to avoid a 298 dollar (plus tax) per person late cancellation charge; this policy applies to same day reservations as well. If we are unable to confirm with you, your reservation will be cancelled one day prior to the reservation at 5:00 pm. We thank you for your understanding.</p>
+                    <div class="reserve-button">
+                        <a onclick="toggle()">TERRACE RESERVATION</a>
+                    </div>
+                </div>
+			</div>
+		</div>
+    </div>
+    <div id="popup">
+        <h2>RESERVATION FORM</h2>
+        <label>Full Name*: </label><input type="text" name="custName"> <br>
+        <label>Email*: </label><input type="text" name="custEmail"> <br>
+        <div class="rsv-nav">
+            <a class="btn-rsv btn-left" onclick="toggle()">Close</a>
+            <a class="btn-rsv btn-right" onclick="toggle2()">Next</a>
+        </div>
+
+    </div>
+
+    <div id="popup2">
+        <h2>RESERVATION FORM</h2>
+        <label>Phone Number*: </label><input type="text" name="custPhone" placeholder="081xxxxxxxxx"> <br>
+        <label>Gender*: </label><br>
+        <select name="custGender">
+        	<option value="male">Male</option>
+        	<option value="female">Female</option>
+        </select><br><br>
+        <div class="rsv-nav">
+            <a class="btn-rsv btn-left" onclick="toggle2()">Previous</a>
+            <a class="btn-rsv btn-right" onclick="toggle3()">Next</a>
+        </div>
+    </div>
+
+    <div id="popup3">
+        <h2>YOUR EVENT DETAILS</h2>
+        <label>Environment*: </label><br>
+        <select name="custEnvPreference">
+        	<option value="diningRoom">Dining Room</option>
+        	<option value="terrace">Terrace Area</option>
+        </select><br>
+        <label>Event Type*: </label><input type="text" name="custEventPreference" placeholder="Nature of this Event (e.g., Birthday Party or Business Dinner)"> <br>
+        
+        <div class="rsv-nav">
+            <a class="btn-rsv btn-left" onclick="toggle3()">Previous</a>
+            <a class="btn-rsv btn-right" onclick="toggle4()">Next</a>
+        </div>
+    </div>
+
+    <div id="popup4">
+        <h2>YOUR EVENT DETAILS</h2>
+        <label>Event Date*: </label><input type="date" name="custDatePreference"> <br>
+        <label>Event Time*: </label><br>
+        <select name="custTimeAMPMPreference">
+        	<option value="am">AM</option>
+        	<option value="pm">PM</option>
+        </select>
+        <select name="custTimeBeginPreference">
+        	<option value="0">-</option>
+        	<option value="1">01:00</option>
+        	<option value="2">02:00</option>
+        	<option value="3">03:00</option>
+        	<option value="4">04:00</option>
+        	<option value="5">05:00</option>
+        	<option value="6">06:00</option>
+        	<option value="7">07:00</option>
+        	<option value="8">08:00</option>
+        	<option value="9">09:00</option>
+        	<option value="10">10:00</option>
+        	<option value="11">11:00</option>
+        	<option value="12">12:00</option>
+        </select>
+        <label>to</label>
+        <select name="custTimeEndPreference">
+        	<option value="0">-</option>
+        	<option value="1">01:00</option>
+        	<option value="2">02:00</option>
+        	<option value="3">03:00</option>
+        	<option value="4">04:00</option>
+        	<option value="5">05:00</option>
+        	<option value="6">06:00</option>
+        	<option value="7">07:00</option>
+        	<option value="8">08:00</option>
+        	<option value="9">09:00</option>
+        	<option value="10">10:00</option>
+        	<option value="11">11:00</option>
+        	<option value="12">12:00</option>
+        </select><br><br>
+        
+        <div class="rsv-nav">
+            <a class="btn-rsv btn-left" onclick="toggle4()">Previous</a>
+            <a class="btn-rsv btn-right" onclick="toggle5()">Next</a>
+        </div>
+    </div>
+    
+    <div id="popup5">
+        <h2>RESERVATION FORM</h2>
+        <label>Number of People(s)*: </label><input type="text" name="custPeople"> <br>
+        <label>Additional Information (optional): </label><input type="textarea" name="custAddInfo"> <br>
+
+        <div class="rsv-nav">
+            <a class="btn-rsv btn-left" onclick="toggle5()">Previous</a>
+            <a class="btn-rsv btn-right" onclick="toggle6()">Submit</a>
+        </div>
+    </div>
+
+    <div id="popup6">
+        <h2>YOUR RESERVATION IS SUCCESSFUL!</h2>
+        <p>Please kindly wait for your Reservation's approval.</p>
+        <p>You will be notified via Email within 24 hours.</p>
+        <p>Thank You. -Affamato Team</p><br>
+        <div class="rsv-nav">
+            <a class="btn-rsv btn-left" onclick="toggle7()">Close</a>
+        </div>
+    </div>     
+
+    <footer>
+		<div class="fixFooter">
+			<div class="footer-container">
+				<div class="footerlogo">
+					<img draggable="false" social-media-logo" src="source/footerlogo2.png">
+				</div>
+				<div class="footer-menu-wrap">
+                    <ul class="footer-menu">
+                        <li>470 PACIFIC AVENUE, SAN FRANCISCO</li>
+                        <li>415.775.8500</li>
+                        <li>DINE IN</li>
+                        <li>BUFFET</li>
+                    </ul>
+                </div>
+				
+			</div>
+			
+		</div>
+	</footer>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            console.log(document.documentElement.scrollTop);
+          if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            document.getElementById("site-header-primary").style.backgroundImage = "";
+            document.getElementById("site-header-primary").style.backgroundColor = "rgba(246, 241, 238, 0.9)";
+            document.getElementsByClassName("site-logo")[0].style.width = "200px";
+            document.getElementById("site-header-primary").style.paddingTop = "1rem";
+            document.getElementById("site-header-primary").style.paddingBottom = "0.8rem";
+ 
+          } else {
+            document.getElementById("site-header-primary").style.backgroundImage = "linear-gradient(rgb(246, 241, 238), rgba(255, 255, 255, 0))";
+            document.getElementById("site-header-primary").style.backgroundColor = "";
+            document.getElementsByClassName("site-logo")[0].style.width = "300px";
+            document.getElementById("site-header-primary").style.paddingTop = "1.5rem";
+            document.getElementById("site-header-primary").style.paddingBottom = "1.5rem";
+          }
+          if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            document.getElementsByClassName("guest-policies")[0].style.opacity = "100%";
+            document.getElementsByClassName("guest-policies")[0].style.transform = "translateY(0px)";
+          }
+          if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+            document.getElementsByClassName("reservation-image")[0].style.opacity = "100%";
+            document.getElementsByClassName("reservation-image")[0].style.transform = "translateY(0px)";
+          }
+          if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
+            document.getElementsByClassName("room-type")[0].style.opacity = "100%";
+            document.getElementsByClassName("room-type")[0].style.transform = "translateY(0px)";
+          }
+          if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
+            document.getElementsByClassName("reservation-image")[1].style.opacity = "100%";
+            document.getElementsByClassName("reservation-image")[1].style.transform = "translateY(0px)";
+          }
+          if (document.body.scrollTop > 2600 || document.documentElement.scrollTop > 2600) {
+            document.getElementsByClassName("room-type")[1].style.opacity = "100%";
+            document.getElementsByClassName("room-type")[1].style.transform = "translateY(0px)";
+          }
+        }
+        </script>
+        <script type="text/javascript">
+            function toggle(){
+                var blur = document.getElementsByClassName('wrapper')[0];
+                blur.classList.toggle('blur');
+                var blur = document.getElementById('blur');
+                popup.classList.toggle('active');
+            }
+            function toggle2(){
+            	var blur = document.getElementById('blur');
+                popup.classList.toggle('active');
+                var blur = document.getElementById('blur');
+                popup2.classList.toggle('active');
+            }
+            function toggle3(){
+            	var blur = document.getElementById('blur');
+                popup2.classList.toggle('active');
+                var blur = document.getElementById('blur');
+                popup3.classList.toggle('active');
+            }
+             function toggle4(){
+                var blur = document.getElementById('blur');
+                popup3.classList.toggle('active');
+                var blur = document.getElementById('blur');
+                popup4.classList.toggle('active');
+            }
+            function toggle5(){
+                var blur = document.getElementById('blur');
+                popup4.classList.toggle('active');
+                var blur = document.getElementById('blur');
+                popup5.classList.toggle('active');
+            }
+            function toggle6(){
+                var blur = document.getElementById('blur');
+                popup5.classList.toggle('active');
+                var blur = document.getElementById('blur');
+                popup6.classList.toggle('active');
+            }
+            function toggle7(){
+                var blur = document.getElementsByClassName('wrapper')[0];
+                blur.classList.toggle('blur');
+                var blur = document.getElementById('blur');
+                popup6.classList.toggle('active');
+            }
+            offtoggle()
+        </script>
+</body>
+</html>

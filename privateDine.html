@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Private Dining | Affamato Restaurant</title>
+	<link rel="stylesheet" type="text/css" href="css/privateDineCss.css">
+</head>
+<body>
+    <div id="testing">
+    <header>
+        <div class="site-header">
+            <div id="site-header-primary">
+                <div class="container">
+                    <div class="site-logo">
+                        <a href="index.html">
+                            <img class="site-logo-btn" draggable="false" src="source/logo.png" alt="Affamato Restaurant Home">
+                        </a>
+                    </div>
+                    <nav class="site-nav">
+                        <ul class="site-nav-menu">
+                            <li><a href="welcomepage.html">WELCOME</a></li>
+                            <li><a href="menu.html">MENU</a></li>
+                            <li><a href="privateDine.html">PRIVATE DINING</a></li>
+                            <li><a href="ourteam.html">OUR TEAM</a></li>
+                            <li><a href="reservations.html">RESERVATIONS</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+		<div class="wrapper">
+	        <div class="open-image">        
+	            <div class="welcome-image"></div>
+	        </div>
+			<div class="content-box">
+					<div class="guest-policies">
+						<h1>PRIVATE FINE DINING @ AFFAMATO</h1>
+						<p>Whether entertaining a select group or hosting a large reception throughout the entire restaurant, Affamato offers a number of options suitable for any occasion or event. A dedicated staff ensures that every detail of your event is attended to.</p>
+	                    
+	                    <p>Private dining available 7 days a week.</p>
+
+	                    <div class="reserve-button">
+                        	<a onclick="toggle()">INQUIRE NOW</a>
+                    	</div>
+					</div>
+				<div class="reservation-image" style='background-image:url("source/private2.jpg")'>
+                </div>
+                
+				<div class="room-type">
+                    <h1>WEST WING DINING ROOM</h1>
+                    <p>Steps above the main dining room, this lavish space is available for exclusive use each evening. With views into the vaulted wine cellar through historic brick archways, the room also features glass panel doors and silk drapery to allow for complete privacy for discerning groups of up to 18 guests.
+                    
+                </div>
+
+                <div class="reservation-image" style='background-image:url("source/private3.jpg")'>
+                </div>
+                
+                <div class="room-type last">
+
+                    <h1>EAST WING DINING ROOM</h1>
+                    <p>Adjacent to the Affamato dining room, the restaurant offers two smaller private dining rooms with an elegant setting to host intimate gatherings for groups of up to 12 guests.</p>
+
+                </div>
+
+                <div class="reservation-image" style='background-image:url("source/reserve.jpg")'>
+                </div>
+
+                <div class="restaurant-desc">
+
+                    <h1>EXCLUSIVE USE OF THE RESTAURANT</h1>
+                    <p>The striking architecture of the building, together with modern interiors, provide a stunning venue to host larger parties. Exclusive use of the restaurant can be arranged for both luncheon and dinner events each day, with the front salon and bar serving as the perfect setting for a reception in advance of a seated event.</p>
+
+                </div>
+
+                <div class="reservation-image" style='background-image:url("source/events.jpg")'>
+                </div>
+
+                <div class="events-desc">
+
+                    <h1>SPECIAL OCCASION EVENTS</h1>
+                    <p>Chef Tanz's full-service catering and events production company featuring Affamato's celebrated cuisine and refined service. This daily end-of-the-month Special Event is available for offsite events at your residence or a venue of your choosing. Tanz Events delivers world-class dining experiences beyond the four walls of the restaurant for parties of 20 to over 200.</p>
+
+                    <div class="reserve-button">
+                        <a onclick="toggle()">INQUIRE NOW</a>
+                    </div>
+                </div>
+
+                
+                
+
+			</div>
+		</div>
+    </div>
+    <div id="popup">
+        <table class="popup-container">
+            <tr>
+                <td><h2>SPECIAL EVENT RESERVATION</h2></td>
+            </tr>
+
+            <tr>
+                <td><label>Full Name: </label><input type="text" name="custFName"></td>
+            </tr>
+            <tr>
+                <td><label>Last Name: </label><input type="text" name="custLName"></td>
+            </tr>
+
+            <tr>
+                <td><label>Email: </label><input type="text" name="custEmail"> </td>
+            </tr>
+            <tr>
+                <td><label>Phone Number: </label><input type="text" name="custPhone"></td>
+            </tr>
+
+            
+
+
+
+
+            <tr>
+                <td><h2>DETAILS</h2></td>
+            </tr>
+            
+            
+            <tr>
+                <td>
+                    <label>Select Event Day (Fri-Sun)</label><input type="text" name="custNat">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Event Date*: (This month's Special Event is on May 29-31) </label><input type="date" name="custDatePreference">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Event Time*: (This month's Event starts at 4 - 8 PM)</label>
+                </td>
+            </tr>
+            <tr>
+                <td id="jam">
+                    <select name="custTimeAMPMPreference">
+                        <option value="am">AM</option>
+                        <option value="pm">PM</option>
+                    </select>
+                </td>
+            
+                <td id="jam">
+                    <select name="custTimeBeginPreference">
+                        <option value="0">-</option>
+                        <option value="1">01:00</option>
+                        <option value="2">02:00</option>
+                        <option value="3">03:00</option>
+                        <option value="4">04:00</option>
+                        <option value="5">05:00</option>
+                        <option value="6">06:00</option>
+                        <option value="7">07:00</option>
+                        <option value="8">08:00</option>
+                        <option value="9">09:00</option>
+                        <option value="10">10:00</option>
+                        <option value="11">11:00</option>
+                        <option value="12">12:00</option>
+                    </select>
+                </td>
+            
+                <td id="jam">
+                    <label>to</label>
+                        <select name="custTimeEndPreference">
+                            <option value="0">-</option>
+                            <option value="1">01:00</option>
+                            <option value="2">02:00</option>
+                            <option value="3">03:00</option>
+                            <option value="4">04:00</option>
+                            <option value="5">05:00</option>
+                            <option value="6">06:00</option>
+                            <option value="7">07:00</option>
+                            <option value="8">08:00</option>
+                            <option value="9">09:00</option>
+                            <option value="10">10:00</option>
+                            <option value="11">11:00</option>
+                            <option value="12">12:00</option>
+                        </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Number of People</label><input type="text" name="custPeople">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Is there any additional information you would like to add?</label><textarea class="custAdd" name="custAdd" wrap="hard" style="resize: none;"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>How did you hear about us?</label><input type="text" name="custHear">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="rsv-nav">
+                        <a class="btn-rsv btn-left" onclick="togglecancel()">Cancel</a>
+                        <a class="btn-rsv btn-right" onclick="toggle2()">Submit</a>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+
+        
+
+
+
+
+
+
+
+
+    <div id="popup2">
+       <div class="popup-container">
+            <table>
+                <tr>
+                    <td style="text-align:center;" >
+                        <h2>YOUR RESERVATION IS SUCCESSFUL!</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Please kindly wait for your Reservation's approval.</p>
+                        <p>You will be notified via Email within 24 hours.</p>
+                        <p>Thank You. -Affamato Team</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:center;">
+                        <a class="btn-rsv btn-cntr" onclick="toggle3()">Close</a>
+                    </td>
+                </tr>
+
+            </table>
+        </div> 
+    </div>
+    <footer>
+		<div class="fixFooter">
+			<div class="footer-container">
+				<div class="footerlogo">
+					<img draggable='false' class="social-media-logo" src="source/footerlogo2.png">
+				</div>
+				<div class="footer-menu-wrap">
+                    <ul class="footer-menu">
+                        <li>470 PACIFIC AVENUE, SAN FRANCISCO</li>
+                        <li>415.775.8500</li>
+                        <li>DINE IN</li>
+                        <li>BUFFET</li>
+                    </ul>
+                </div>
+				
+			</div>
+			
+		</div>
+	</footer>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            console.log(document.documentElement.scrollTop);
+          if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            document.getElementById("site-header-primary").style.backgroundImage = "";
+            document.getElementById("site-header-primary").style.backgroundColor = "rgba(246, 241, 238, 0.9)";
+            document.getElementsByClassName("site-logo")[0].style.width = "200px";
+            document.getElementById("site-header-primary").style.paddingTop = "1rem";
+            document.getElementById("site-header-primary").style.paddingBottom = "0.8rem";
+ 
+          } else {
+            document.getElementById("site-header-primary").style.backgroundImage = "linear-gradient(rgb(246, 241, 238), rgba(255, 255, 255, 0))";
+            document.getElementById("site-header-primary").style.backgroundColor = "";
+            document.getElementsByClassName("site-logo")[0].style.width = "300px";
+            document.getElementById("site-header-primary").style.paddingTop = "1.5rem";
+            document.getElementById("site-header-primary").style.paddingBottom = "1.5rem";
+          }
+          if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            document.getElementsByClassName("guest-policies")[0].style.opacity = "100%";
+            document.getElementsByClassName("guest-policies")[0].style.transform = "translateY(0px)";
+          }
+          if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+            document.getElementsByClassName("reservation-image")[0].style.opacity = "100%";
+            document.getElementsByClassName("reservation-image")[0].style.transform = "translateY(0px)";
+          }
+          if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
+            document.getElementsByClassName("room-type")[0].style.opacity = "100%";
+            document.getElementsByClassName("room-type")[0].style.transform = "translateY(0px)";
+          }
+          if (document.body.scrollTop > 1600 || document.documentElement.scrollTop > 1600) {
+            document.getElementsByClassName("reservation-image")[1].style.opacity = "100%";
+            document.getElementsByClassName("reservation-image")[1].style.transform = "translateY(0px)";
+          }
+          if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
+            document.getElementsByClassName("room-type")[1].style.opacity = "100%";
+            document.getElementsByClassName("room-type")[1].style.transform = "translateY(0px)";
+          }
+          if (document.body.scrollTop > 2500 || document.documentElement.scrollTop > 2500) {
+            document.getElementsByClassName("reservation-image")[2].style.opacity = "100%";
+            document.getElementsByClassName("reservation-image")[2].style.transform = "translateY(0px)";
+          }
+          if (document.body.scrollTop > 2900 || document.documentElement.scrollTop > 2900) {
+            document.getElementsByClassName("restaurant-desc")[0].style.opacity = "100%";
+            document.getElementsByClassName("restaurant-desc")[0].style.transform = "translateY(0px)";
+          }
+          if (document.body.scrollTop > 3300 || document.documentElement.scrollTop > 3300) {
+            document.getElementsByClassName("reservation-image")[3].style.opacity = "100%";
+            document.getElementsByClassName("reservation-image")[3].style.transform = "translateY(0px)";
+          }
+          if (document.body.scrollTop > 3900 || document.documentElement.scrollTop > 3900) {
+            document.getElementsByClassName("events-desc")[0].style.opacity = "100%";
+            document.getElementsByClassName("events-desc")[0].style.transform = "translateY(0px)";
+          }
+        }
+        </script>
+        <script type="text/javascript">
+            function toggle(){
+                var blur = document.getElementById('testing');
+                blur.classList.toggle('blur');
+                var blur = document.getElementById('blur');
+                popup.classList.toggle('active');
+            }
+            function toggle2(){
+                var blur = document.getElementById('blur');
+                popup.classList.toggle('active');
+                var blur = document.getElementById('blur');
+                popup2.classList.toggle('active');
+            }
+            function toggle3(){
+                var blur = document.getElementById('testing');
+                blur.classList.toggle('blur');
+                var blur = document.getElementById('blur');
+                popup2.classList.toggle('active');
+            }
+            function togglecancel(){
+                var blur = document.getElementById('testing');
+                blur.classList.toggle('blur');
+                var blur = document.getElementById('blur');
+                popup.classList.toggle('active');
+            }
+
+        </script>
+    </div><!--testing-->
+</body>
+</html>
